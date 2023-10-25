@@ -13,6 +13,7 @@
     --cor3: black;
     --cor4: #EBEBF2;
     --cor5: #ebebf21b;
+    --cor6: #0c42f4;
 
     --fonte01: Verdana, Geneva, Tahoma, sans-serif;
     --fonte02: 'Gabarito', sans-serif;
@@ -46,16 +47,27 @@ a {
     background-color: rgba(255, 255, 255, 0.067);
     color: var(--cor3);
     text-decoration: none;
-    padding: 0px 25px;
+    padding: 5px;
     border-radius: 15px;
     font-size: 1.2em;
     font-variant: small-caps;
 }
 
 a:hover {
-    color: var(--cor4);
+    color: var(--cor6);
     text-shadow: 0px 0px 2px var(--cor3);
     text-decoration: underline;
+    background-color: var(--cor4);
+}
+
+/*menu*/
+
+menu {
+    padding-bottom: 10px;
+}
+menu a:hover {
+    background-color: var(--cor1);
+    color: var(--cor3);
 }
 
 /*main*/
@@ -65,10 +77,12 @@ main {
 }
 
 section {
-    padding: 15px 25em;
+    padding: 10px;
 }
 
 section > h2 {
+    width: 610px;
+    margin: auto;
     color: var(--cor4);
     text-shadow: 0px 0px 3px var(--cor1);
     text-align: center;
@@ -78,6 +92,8 @@ section > h2 {
 }
 
 section > p {
+    width: 600px;
+    margin: auto;
     color: var(--cor4);
     text-shadow: 0px 0px 3px var(--cor2);
     text-indent: 30px;
@@ -85,19 +101,22 @@ section > p {
     font-size: 1.2em;
 }
 
+#img02 {
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
 section#img02 p {
+    width: 600px;
+    margin: auto;
     color: var(--cor3);
     text-shadow: 0.5px 0.5px 1.2px var(--cor4);
-    background-color: var(--cor5);
-    padding: 10px;
+    padding: 15px;
 }
 
 /*imagens*/
 
 section#img02 h2 {
     color: var(--cor3);
-    text-shadow: 0.5px 0.5px 1.2px var(--cor4);
-    background-color: var(--cor5);
     padding: 10px;
 }
 
@@ -120,6 +139,10 @@ section#img02 h2 {
 article {
     background-color: var(--cor5);
     text-align: center;
+}
+
+article#referencia > h3 {
+    padding: 20px;
 }
 
 /*footer*/
