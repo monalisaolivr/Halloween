@@ -17,7 +17,6 @@
 
     --fonte01: Verdana, Geneva, Tahoma, sans-serif;
     --fonte02: 'Gabarito', sans-serif;
-    --fonte03: 
 }
 
 body {
@@ -72,16 +71,11 @@ menu a:hover {
 
 /*main*/
 
-main {
-    text-align: justify;
-}
-
 section {
     padding: 10px;
 }
 
 section > h2 {
-    width: 610px;
     margin: auto;
     color: var(--cor4);
     text-shadow: 0px 0px 3px var(--cor1);
@@ -92,13 +86,14 @@ section > h2 {
 }
 
 section > p {
-    width: 600px;
     margin: auto;
     color: var(--cor4);
     text-shadow: 0px 0px 3px var(--cor2);
     text-indent: 30px;
+    text-align: justify;
     line-height: 2em;
     font-size: 1.2em;
+    max-width: 500px;
 }
 
 #img02 {
@@ -106,8 +101,6 @@ section > p {
 }
 
 section#img02 p {
-    width: 600px;
-    margin: auto;
     color: var(--cor3);
     text-shadow: 0.5px 0.5px 1.2px var(--cor4);
     padding: 15px;
@@ -121,8 +114,8 @@ section#img02 h2 {
 }
 
 .img {
+    background: var(--cor1) center center no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
     box-shadow: inherit 2px 2px 4px var(--cor3);
 }
 
@@ -149,4 +142,5 @@ article#referencia > h3 {
 
 footer {
     background-color: var(--cor4);
+    padding-bottom: 0px;
 }
